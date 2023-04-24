@@ -1,0 +1,34 @@
+
+
+import { useState } from "react";
+
+export function Counter({ children }) {
+  const [count, setCount] = useState(0);
+  return (
+    <div >
+  
+    <div className="flex space-x-5">
+    <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+  Button
+</button>
+
+<button className="bg-black hover:bg-slate-900 text-white font-bold py-2 px-4 rounded">
+  Button
+</button>
+
+<button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+  Button
+</button>
+
+</div>
+   
+    
+    </div>
+  );
+}
+
+# Buttons
+<br />
+
+
+<Counter>Increment: </Counter>
